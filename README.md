@@ -7,6 +7,8 @@ This project builds a data wrangling and validation pipeline to efficiently hand
 ## 📂 Project Structure
 ```
 supplychain-schedule-checker/
+├── main.py
+├── report_example.xlsx
 ├── data/
 │   └── source_data.py                # Functions to load raw data from suppliers and PO schedule
 │
@@ -16,11 +18,11 @@ supplychain-schedule-checker/
 │   ├── process_concatenated_df.py   # Core ETL logic: combine, update, validate shipping data
 │   └── process_final_df.py          
 │
-├── check_and_format/
-│   ├── check.py                     # Validation functions (e.g., parentheses, customer match)
-│   └── format_report.py             # Formats final Excel report
-│
-└── main.py  
+└── check_and_format/
+    ├── check.py                     # Validation functions (e.g., parentheses, customer match)
+    └── format_report.py             # Formats final Excel report
+
+
 ```
 ---
 
