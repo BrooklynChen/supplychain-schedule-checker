@@ -1,4 +1,4 @@
-# Supplychain Schedule Checker
+# ✅ Supplychain Schedule Checker
 
 This project builds a data wrangling and validation pipeline to efficiently handle and cross-check shipping schedule data received from multiple factories. The pipeline automates the extraction, transformation, and loading (ETL) of data from 10 different factory sources, and performs a thorough comparison against the internal Purchase Order Schedule (POSS). The output is a formatted Excel report that highlights discrepancies for analysis and resolution.
 
@@ -22,6 +22,7 @@ shipping_schedule_report/
 │
 └── main.py  
 ```
+---
 
 ## 📄 Report Description
 The report cross-checks shipping schedules from factories against the company's Purchase Order Schedule (POSS). It highlights discrepancies in ETDs, quantities, shipping methods, and sales/customer data, enabling teams to identify mismatches, missing entries, and data inconsistencies.
