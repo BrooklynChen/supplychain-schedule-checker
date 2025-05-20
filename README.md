@@ -6,7 +6,7 @@ This project builds a data wrangling and validation pipeline to efficiently hand
 
 ## 📂 Project Structure
 ```
-shipping_schedule_report/
+supplychain-schedule-checker/
 ├── data/
 │   └── source_data.py                # Functions to load raw data from suppliers and PO schedule
 │
