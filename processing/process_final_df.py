@@ -70,41 +70,11 @@ def process_final_dataframe(final_df, factory):
 
     # Create a dictionary mapping old names to new names
     name_mapping = {
-        'AG': 'AG Machining',
-        'AG Maching': 'AG Machining',
-        'Encore': 'Encore Repair',
-        'Fluid Management Operation': 'Fluid Management',
-        'General Assemby': 'General Assembly',
-        'H. E. Williams': 'HEW',
-        'Hercules': 'Hercules Sealing',
-        'Hubbell': 'Hubbell Power',
-        'Hubbell-Raco': 'Hubbell Wiring',
-        'HCP': 'HPC',
-        'Jamesway Chick Master Incubator Company': 'Jamesway',
-        'NEWELL': 'Newell Brands',
-        'Lake Erie': 'Lake Erie Rubber',
-        'Newell': 'Newell Brands',
-        'Rubber, Plastic & Metal Engineering Corp.': 'Company',
-        'USF Fabrication ': 'USF',
-        'Star MFG': 'Star Manufacturing',
-        'Hubbell-Raco': 'Hubbell Raco',
-        'DAC': 'Douglas Autotech',
-        'EGR': 'Elk Grove Rubber',
-        'Thomas Built Buses': 'TBB',
-        'Potter Electric': 'Potter',
-        'Circle Bolt & Nut': 'CBN',
-        '365  Retail': '365',
-        '365 Retail': '365',
-        'Buyers': 'Buyers Products',
-        'Customworks': 'Custom Works',
-        'Anderson': 'Anderson Mfg',
-        'Minor': 'Minor Rubber',
-        'Horton': 'Horton Corpus',
-        'DOD': 'Depend-O-Drain',
-        'Horton': 'Horton Corpus',
-        'Houston': 'Houston Corpus',
-        'Brico': 'New Brico',
-        'JTEKT Column Systems North America': 'JTEKT'
+        'PONAG': 'A',
+        'IBVCF': 'B',
+        'OCUJLL': 'C',
+        'UJIOKL': 'D',
+        'TGJK': 'E'
     }
 
     # Use the dictionary to replace values in the 'Customer' column
