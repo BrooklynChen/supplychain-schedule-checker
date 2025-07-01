@@ -10,11 +10,22 @@ def get_factory_list(Shipping_schedule_folder):
 
     # List all files in the Shipping_schedule_folder
     for file_name in os.listdir(Shipping_schedule_folder):
+        file_path = os.path.join(Shipping_schedule_folder, file_name)
+
         # Check if the file is a file and ends with '.xlsx'
-        if os.path.isfile(os.path.join(Shipping_schedule_folder, file_name)) and file_name.endswith('.xlsx'):
+        if os.path.isfile(file_path) and file_name.endswith('.xlsx'):
             # Extract the factory identifier (the part before the '.xlsx')
-            factory_identifier = file_name.split('.')[0]  # Split by '.' and take the first part
+            factory_identifier = file_name.split('.')[0].strip().upper().split()[0]
             new_factory_list.append(factory_identifier)
+
+            # Define new file name and path
+            new_file_name = f"{factory_identifier}.xlsx"
+            new_file_path = os.path.join(Shipping_schedule_folder, new_file_name)
+
+            # Rename the file if the name is changing
+            if file_name != new_file_name:
+                os.rename(file_path, new_file_path)
+                print(f"Renamed: {file_name} -> {new_file_name}")
     return new_factory_list
 
 def get_parts_by_customer(username, password, db_file):
